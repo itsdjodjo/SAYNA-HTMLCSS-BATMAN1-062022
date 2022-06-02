@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Rajdhani";
+    src: url(../Assets/Fonts/Rajdhani/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Space-Grotesk";
+    src: url(../Assets/Fonts/Space_Grotesk/SpaceGrotesk-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space-Grotesk";
+    src: url(../Assets/Fonts/Space_Grotesk/SpaceGrotesk-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url(../Assets/Illustrations/Bathome1.png);
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%;
+}
+
+#header {
+    padding: 0 7% 0 7%;
+}
+
+.hd-corps {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    margin-top: 10%;
+}
+
+/* .hd-text {
+    display: flex;
+    align-items: center; 
+} */
+
+.hd-text p, .hd-text h2, .hd-text div {
+    padding-left: 20%;
+    text-align: center;
+}
+
+.hd-text p{
+    font-family: "Space-Grotesk", serif;
+    font-size: 22px;
+}
+
+.hd-text h2 {
+    font-family: "Space-Grotesk", serif;
+    font-weight: bold;
+    font-size: 32px;
+}
