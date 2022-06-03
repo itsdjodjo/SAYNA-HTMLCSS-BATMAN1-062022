@@ -17,6 +17,17 @@
     font-style: normal;
 }
 
+:root {
+    --yellow: #FFF000;
+    --lemon: #f8f184;
+    --blue: #19587d;
+    --red-light: #b11313;
+    --dark-light: #0d0e09;
+    --dark: #000000;
+    --white: #ffffff;
+    --gray: #c4c4c4;
+}
+
 *  {
     box-sizing: border-box;
 }
@@ -35,7 +46,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 5% 5% 7%;
-    border: solid 2px #ffffff;
+    border: solid 2px var(--gray);
 }
 
 .nav-bar a {
@@ -52,7 +63,7 @@ header {
 }
 
 .nav-liens a {
-    color: #ffffff;
+    color: var(--white);
 }
 
 #header {
