@@ -34,7 +34,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5% 5% 0 5%;
+    padding: 2% 5% 5% 7%;
+    border: solid 2px #ffffff;
+}
+
+.nav-bar a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul {
+    /* pour enlever les puces, j'utilise list-style */
+    list-style: none;
+    font-family: "Rajdhani", serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nav-liens a {
+    color: #ffffff;
 }
 
 #header {
