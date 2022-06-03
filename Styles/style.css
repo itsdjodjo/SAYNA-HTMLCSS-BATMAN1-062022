@@ -71,9 +71,12 @@ header {
 }
 
 .hd-corps {
+    /* j'utilise css Grid pour diviser la div en 2,
+    et c'est plus facile pour moi d;'utiliser grid */
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 65% 5%;
     margin-top: 10%;
+    grid-gap: 25%;
 }
 
 /* .hd-text {
@@ -82,7 +85,7 @@ header {
 } */
 
 .hd-text p, .hd-text h2, .hd-text div {
-    padding-left: 20%;
+    padding-left: 15%;
     text-align: center;
 }
 
@@ -95,4 +98,10 @@ header {
     font-family: "Space-Grotesk", serif;
     font-weight: bold;
     font-size: 32px;
+}
+
+#hd-reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
