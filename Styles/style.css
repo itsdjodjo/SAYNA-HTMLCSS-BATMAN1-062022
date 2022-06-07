@@ -37,8 +37,13 @@ body {
     margin: 0;
 }
 
-header {
+.menu {
     background-image: url(../Assets/Illustrations/Bathome1.png);
+}
+
+/* pour mettre les traits sur les cotes de la page */
+#menu-padding {
+    padding: 0 7% 0 7%;
 }
 
 .nav-bar {
@@ -66,10 +71,6 @@ header {
 .nav-liens a {
     color: var(--white);
     text-decoration: underline;
-}
-
-#header {
-    padding: 0 7% 0 7%;
 }
 
 /* j'utilise css Grid pour diviser la div en 2,
