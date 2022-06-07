@@ -24,8 +24,9 @@
     --red-light: #b11313;
     --dark-light: #0d0e09;
     --dark: #000000;
-    --white: #ffffff;
+    --white: #ffffffe0;
     --gray: #c4c4c4;
+    --broder-gray: #7c70702e;
 }
 
 *  {
@@ -38,15 +39,16 @@ body {
 
 header {
     background-image: url(../Assets/Illustrations/Bathome1.png);
-
 }
 
 .nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2% 5% 5% 7%;
-    border: solid 2px var(--gray);
+    padding: 2% 5% 8% 7%;
+    border-style: solid;
+    border-width: 0px 3px 3px 3px;
+    border-color: var(--broder-gray);
 }
 
 .nav-bar a {
@@ -55,36 +57,42 @@ header {
 }
 
 .nav-bar ul {
-    /* pour enlever les puces, j'utilise list-style */
     list-style: none;
     font-family: "Rajdhani", serif;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .nav-liens a {
     color: var(--white);
+    text-decoration: underline;
 }
 
 #header {
     padding: 0 7% 0 7%;
 }
 
+/* j'utilise css Grid pour diviser la div en 2,
+    et c'est plus facile pour moi d'utiliser grid */
 .hd-corps {
-    /* j'utilise css Grid pour diviser la div en 2,
-    et c'est plus facile pour moi d;'utiliser grid */
     display: grid;
-    grid-template-columns: 65% 5%;
-    margin-top: 10%;
-    grid-gap: 25%;
+    grid-template-columns: 80% 10%;
+    padding-top: 10%;
+    grid-gap: 15%;
+    height: 700px;
+    border-style: solid;
+    border-width: 3px 3px 0px 3px;
+    border-color: var(--broder-gray);
 }
 
-/* .hd-text {
-    display: flex;
-    align-items: center; 
-} */
+.hd-text {
+    height: 70%;
+    color: var(--white);
+    padding-top: 8%;
+    padding-left: 20%;
+}
 
-.hd-text p, .hd-text h2, .hd-text div {
+.hd-text p, .hd-text h2, .hd-bt {
     padding-left: 15%;
     text-align: center;
 }
@@ -98,10 +106,34 @@ header {
     font-family: "Space-Grotesk", serif;
     font-weight: bold;
     font-size: 32px;
+    margin-bottom: 50px;
 }
 
+/* mettre les liens des reseaux sociaux en vertical */
 #hd-reseaux {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 55%;
+    margin-top: 80%;
+}
+
+/* Passond au style des 2 boutons */
+.hd-bt {
+    height: 50px;
+}
+
+#second-bt {
+    padding: 15px 45px 15px 45px;
+    margin-left: 30px;
+}
+
+.hd-bt a {
+    text-decoration: none;
+    background-color: #ede2e254;
+    padding: 15px 55px 15px 55px;
+    color: var(--white);
+    font-family: "Rajdhani", serif;
+    font-size: 20px;
 }
