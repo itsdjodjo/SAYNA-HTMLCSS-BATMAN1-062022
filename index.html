@@ -10,15 +10,11 @@
     <body>
         <div class="menu">
             <div id="menu-padding">
-                <header>
-                    <!-- Le bg de l'header est une image,
-                    je vais le mettre dans le CSS -->
-                    <!--Je divise le header en 3 div ou en 2-->
+                <header id="top">
                     <nav class="nav-bar">
-                        <!--le logo et le lien Home-->
-                        <a href="#"
-                            ><img src="Assets/Logos/logohome.png" alt="logo"
-                        /></a>
+                        <a href="#">
+                            <img src="Assets/Logos/logohome.png" alt="logo"/>
+                        </a>
                         <ul class="nav-liens">
                             <li><a href="#">HOME</a></li>
                         </ul>
@@ -44,10 +40,12 @@
                     </div>
                     <div id="hd-reseaux">
                         <!--Les liens vers les reseaux sociaux-->
-                        <img
+                        <a href="#top">
+                            <img
                             src="Assets/Logos/logo_bat_flèche.png"
                             alt="fleche vers le haut"
-                        />
+                            />
+                        </a>
                         <a href="#">
                             <img
                                 src="Assets/Logos/icon_facebook.png"
@@ -63,10 +61,12 @@
                         <a href="#">
                             <img src="Assets/Logos/icon_tw.png" alt="Twitter" />
                         </a>
-                        <img
+                        <a href="#bottom">
+                            <img
                             src="Assets/Logos/logo_bat_flèche_2.png"
                             alt="fleche vers le bas"
-                        />
+                            />
+                        </a>
                     </div>
                 </section>
             </div>
@@ -359,7 +359,7 @@
                 <img src="Assets/Logos/icon_guillemets_2.png" alt="">
             </section>
         </main>
-        <footer>
+        <footer id="bottom">
             <div>
                 <img src="Assets/Logos/icon_WB.png" alt="WB">
                 <p> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
