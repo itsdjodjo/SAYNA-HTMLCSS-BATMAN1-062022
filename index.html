@@ -4,373 +4,591 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Batman T4SU | Home</title>
-        <link rel="Stylesheet" href="Styles/style.css" />
+        <link rel="stylesheet" href="Styles/style.css" />
+        <title>Batman | Home</title>
     </head>
     <body>
-        <div class="menu">
-            <div id="menu-padding">
-                <header id="top">
-                    <nav class="nav-bar">
-                        <a href="#">
-                            <img src="Assets/Logos/logohome.png" alt="logo"/>
-                        </a>
-                        <ul class="nav-liens">
-                            <li><a href="#">HOME</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <!--La Premiere section-->
-                <section class="hd-corps">
-                    <div class="hd-text">
+        <header id="header">
+            <nav class="container nav">
+                <div class="nav-wrapper">
+                    <a href="#" class="logo icon-link">
+                        <img src="Assets/Logos/logohome.png" alt="Logo" />
+                        <img
+                            class="img-hover"
+                            src="Assets/Logos/logohome_yellow.png"
+                            alt="Logo"
+                        />
+                    </a>
+                    <div class="links">
+                        <a href="#" class="link link-active">HOME</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="banner container">
+                <div class="banner-wrapper">
+                    <div class="banner-description">
                         <p>
-                            Au nom de ses parents assassinés, Bruce Wayne mène
-                            <br />
-                            une guerre éternelle contre les criminels de Gotham
-                            City.
-                            <br />
+                            Au nom de ses parents assassinés, Bruce Wayne mène une
+                            guerre éternelle contre les criminels de Gotham City.
+                        </p>
+                        <p>
                             Il est vengeur. Il est la nuit.
                         </p>
-                        <h2>Il est Batman.</h2>
-                        <div class="hd-bt">
-                            <!--Les 2 boutons-->
-                            <a href="#"> VOIR LE HÉROS</a>
-                            <a href="#" id="second-bt">LES ADVERSAIRES</a>
+                    </div>
+                    <h1 class="banner-title">Il est Batman.</h1>
+                    <div class="btn-group">
+                        <a href="#section-cinema" class="btn btn-translucent">
+                            Voir le héros
+                        </a>
+                        <a href="#section-nemesis" class="btn btn-translucent">
+                            Les adversaires
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section arrow-down">
+                <div class="container">
+                    <img
+                        src="Assets/Logos/flèche_down_header.png"
+                        alt="Arrow down"
+                    />
+                </div>
+            </section>
+
+            <section id="section-cinema" class="section section-left">
+                <div class="container">
+                    <h2 class="section-title">
+                        <p class="">BATMAN AU CINÉMA</p>
+                    </h2>
+
+                    <p class="section-text">
+                        Le personnage de Batman est un super héros de l'univers de
+                        DC Comics. Il a été créé par le dessinateur Bob Kane et le
+                        scénariste Bill Finger et apparaît pour la première fois
+                        dans le comic book Detective Comics en 1939. Batman se
+                        différencie de Superman, alors héros majeur de DC, car il
+                        n'a aucun pouvoir. Il sera porté au cinema pour la première
+                        fois en 1943 par Lewis Wilson et bénéficiera de nombreux
+                        reboot, donnant l'occasion à de multiples acteurs
+                        d'interpréter l'homme chauve-souris. Voici les trois
+                        derniers :
+                    </p>
+
+                    <div class="section-images">
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome2.png"
+                                alt="Batman"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Robert Pattinson</p>
+                                <p>(2022)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome3.png"
+                                alt="Batman"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Christian Bale</p>
+                                <p>(2006 - 2008 - 2012)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome4.png"
+                                alt="Batman"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Ben Affleck</p>
+                                <p>2016- 2017/2020 2023</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-nemesis" class="section section-left">
+                <div class="container">
+                    <h2 class="section-title">
+                        <p class="" id="nemesis">
+                            <span>NÉMÉSIS</span>
+                            <img src="Assets/Illustrations/Bathome13.png" alt="" />
+                        </p>
+                    </h2>
+
+                    <p class="section-text">
+                        Batman souhaite éradiquer la criminalité de Gotham. C'est
+                        pourquoi, il affrontera la plupart du temps, des vilains
+                        sans capacités surnaturelles mais particulièrement violents
+                        ou psychopathes. Avec son introduction dans la Justice
+                        League il aura l'occasion de se mesurer à des antagonistes
+                        qui défient l'imagination et les lois de la physique. Parmi
+                        les derniers ennemis emblématiques que nous avons pu voir au
+                        cinéma, on retrouve :
+                    </p>
+
+                    <div class="section-images">
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome5.png"
+                                alt="The Riddler - Paul Dano"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>The Riddler - Paul Dano</p>
+                                <p>(2022)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome6.png"
+                                alt="Le Joker - Heath Ledger"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Le Joker - Heath Ledger</p>
+                                <p>(2008)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome7.png"
+                                alt="Darkseid - Ray Porter"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Darkseid - Ray Porter</p>
+                                <p>(2022)</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-left section-ally">
+                <img src="Assets/Illustrations/Bathome12.png" alt="Batman" />
+
+                <div class="container">
+                    <h2 class="section-title">
+                        <p class="">Alliés</p>
+                    </h2>
+
+                    <p class="section-text">
+                        Alfred est le majordome des Wayne. A leur mort il s'occupe
+                        de l'éducation du jeune Bruce avant de l'assister dans son
+                        rôle du Batman. Ce dernier rencontrera Catwoman dès le
+                        premier numéro des aventures de l'homme-chauve souris en
+                        1940. Tantôt ennemie tantôt alliée la jeune femme fatale
+                        fera tourner la tête de Batman à maintes reprises. Du côté
+                        de la police, Bruce pourra compter sur l'aide infaillible de
+                        James Gordon, “Jim , qui désire lui aussi nettoyer sa ville
+                        de la criminalité qui y règne.
+                    </p>
+
+                    <div class="section-images">
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome8.png"
+                                alt="Alfred Pennyworth - Michael Cain"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Alfred Pennyworth - Michael Cain</p>
+                                <p>(2006 2008 2012)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome9.png"
+                                alt="Catwoman - Zoé Kravitz"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>Catwoman - Zoé Kravitz</p>
+                                <p>(2008)</p>
+                            </div>
+                        </article>
+
+                        <article class="section-image-wrapper">
+                            <img
+                                src="Assets/Illustrations/Bathome10.png"
+                                alt="Darkseid - Ray Porter"
+                                class="section-image"
+                            />
+                            <div>
+                                <p>James Gordon</p>
+                                <p>(2014 - 2019)</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-right">
+                <div class="container">
+                    <h2 class="section-title">
+                        <p class="">Justice league</p>
+                    </h2>
+
+                    <p class="section-text">
+                        Lorsque la Terre est menacée les plus grands super-héros
+                        s'allient pour la protéger. Ils doivent cependant apprendre
+                        à se faire confiance mutuellement et à faire équipe ce qui
+                        ne sera pas chose aisée. Ensemble ils forment la Justice
+                        League, les plus grands superhéros de la Terre, ceux vers
+                        qui le monde entier se tourne lorsque les menaces
+                        extraterrestres ou surnaturelles menacent son existence
+                    </p>
+                </div>
+                <img
+                    class="section-image-full"
+                    src="Assets/Illustrations/Bathome11.png"
+                    alt="Justice League"
+                />
+            </section>
+
+            <section class="section section-left">
+                <div class="container">
+                    <h2 class="section-title">
+                        <p class="">MULTIMÉDIA</p>
+                    </h2>
+                    <article class="carousel">
+                        <img
+                            src="Assets/Logos/icon_flèche_1.png"
+                            alt="left"
+                            id="left"
+                            class="carousel-control"
+                        />
+                        <div class="carousel-content">
+                            <img
+                                src="Assets/Illustrations/Bathome_ba1.png"
+                                alt="Batman Begins"
+                                class="carousel-content-image"
+                            />
+                            <div class="carousel-content-text">
+                                <h5>ACTION, ADVENTURE</h5>
+                                <p>Batman Begins</p>
+                                <h5>IMDB: <span class="imdb">8.2</span></h5>
+                                <small class="carousel-content-text--detail">
+                                    Le jeune Bruce Wayne assiste impuissant au
+                                    meurtre de ses parents. Profondément traumatisé,
+                                    il grandit obnubilé par un désir de vengeance.
+                                    La Ligue des ombres, une secte de guerriers
+                                    ninja dirigée par Ra's al Ghul, se chargera de
+                                    son entraînement. De retour chez lui à Gotham,
+                                    avec l'aide de son majordome Alfred Pennyworth,
+                                    Bruce Wayne se lance alors dans la lutte contre
+                                    le crime sous le nom de Batman.
+                                </small>
+                            </div>
+                        </div>
+                        <img
+                            src="Assets/Logos/icon_flèche_2.png"
+                            alt="right"
+                            id="right"
+                            class="carousel-control"
+                        />
+                    </article>
+                    <div class="video-wrapper">
+                        <a
+                            id="link-ba"
+                            href="https://www.youtube.com/watch?v=jXrFsn9pcZY"
+                            target="_blank"
+                        >
+                            <img
+                                id="img-ba"
+                                src="Assets/Illustrations/Bathome_ba2.png"
+                                alt="Bande annonce Batman"
+                            />
+                            <img
+                                id="icon-player"
+                                src="Assets/Logos/icon_player.png"
+                                alt="Play"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-form" class="section section-form">
+                <h2 class="section-title">
+                    <p class="">Prenons contact</p>
+                </h2>
+                <form action="" class="forms">
+                    <div>
+                        <label class="form-heading" for="email"
+                            >Addresse email</label
+                        >
+                        <input
+                            class="input-block"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Addresse email"
+                        />
+                    </div>
+                    <div>
+                        <label class="form-heading">Newsletter</label>
+                        <div class="checkbox-wrapper">
+                            <span>
+                                En cochant cette case vous acceptez de recevoir
+                                l'actualité concernant les aventures de Batman :
+                            </span>
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                        </div>
+                        <!-- we could not apply linear-gradient to "option" element hence we create our own "select" -->
+                        <div id="select">
+                            <p class="select-option-visible input-block">
+                                <span class="select-option-visible-text">
+                                    Chosissez la fréquence à laquelle vous souhaitez
+                                    recevoir votre newletter
+                                </span>
+                                <img
+                                    class="select-option-visible-icon"
+                                    src="Assets/Logos/chevron-down.svg"
+                                    alt=""
+                                />
+                            </p>
+
+                            <ul class="select-options">
+                                <!-- "data-value" contains the "value" of our "option" -->
+                                <li class="select-option" data-value="1_week">
+                                    Une fois par semaine
+                                </li>
+                                <li class="select-option" data-value="2_week">
+                                    Une fois toutes les deux semaines
+                                </li>
+                                <li class="select-option" data-value="1_month">
+                                    Une fois par mois
+                                </li>
+                                <li class="select-option" data-value="3_month">
+                                    Une fois toutes les trois mois
+                                </li>
+                                <li class="select-option" data-value="6_month">
+                                    Une fois toutes les six mois
+                                </li>
+                            </ul>
+                        </div>
+                        <label class="input-block" for="">
+                            Souhaitez vous recevoir des news
+                        </label>
+                        <div class="radio-group">
+                            <input type="radio" name="news" id="films" />
+                            <label class="btn btn-bordered" for="films"
+                                >Des Films</label
+                            >
+                            <input type="radio" name="news" id="comics" />
+                            <label class="btn btn-bordered" for="comics"
+                                >Des Comics</label
+                            >
+                            <input type="radio" name="news" id="all" />
+                            <label class="btn btn-bordered" for="all"
+                                >De tout</label
+                            >
                         </div>
                     </div>
-                    <div id="hd-reseaux">
-                        <!--Les liens vers les reseaux sociaux-->
-                        <a href="#top">
+                    <div>
+                        <label class="form-heading" for="message">Message</label>
+                        <input
+                            type="text"
+                            class="input-block"
+                            name="message"
+                            id="message"
+                            placeholder="Laissez un commentaire pour la communauté"
+                        />
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-translucent">
+                            Confirmer
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <article class="quotes">
+                        <img
+                            src="Assets/Logos/icon_guillemets_1.png"
+                            alt="Quotes"
+                            class="quotes-image"
+                            id="quotes-image-first"
+                        />
+                        <div class="quotes-content">
+                            <p class="quotes-text">
+                                La seule façon raisonnable de vivre en ce bas monde,
+                                c'est en dehors des règles.La seule façon
+                                raisonnable de vivre en ce bas monde, c'est en
+                                dehors des règles.
+                            </p>
+                            <p class="quotes-author">
+                                <small>The Dark Knight : Le Chevalier Noir -</small>
+                                <br />
+                                <small>Le Joker à Batman (2008)</small>
+                            </p>
+                            <div class="quotes-navigation">
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a
+                                    class="quotes-navigation-btn quotes-navigation-btn-active"
+                                ></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                                <a class="quotes-navigation-btn"></a>
+                            </div>
+                        </div>
+                        <img
+                            src="Assets/Logos/icon_guillemets_2.png"
+                            alt="Quotes"
+                            class="quotes-image"
+                            id="quotes-image-second"
+                        />
+                    </article>
+                </div>
+            </section>
+            <aside class="aside">
+                <div class="container">
+                    <div class="networks">
+                        <a href="#header" class="icon-large icon-link">
+                            <!-- we initially show the first image only -->
                             <img
-                            src="Assets/Logos/logo_bat_flèche.png"
-                            alt="fleche vers le haut"
+                                src="Assets/Logos/logo_bat_flèche.png"
+                                alt="Go to the top"
+                            />
+                            <img
+                                src="Assets/Logos/logo_bat_flèche_yellow.png"
+                                alt="Go to the top"
+                                class="img-hover"
                             />
                         </a>
-                        <a href="#">
+                        <a href="#" class="icon-small icon-link">
                             <img
                                 src="Assets/Logos/icon_facebook.png"
-                                alt="facebook"
+                                alt="Facebook"
+                            />
+                            <img
+                                class="img-hover"
+                                src="Assets/Logos/icon_facebook_yellow.png"
+                                alt="Facebook"
                             />
                         </a>
-                        <a href="#">
+                        <a href="#" class="icon-small icon-link">
+                            <img src="Assets/Logos/icon_ig.png" alt="Instagram" />
                             <img
-                                src="Assets/Logos/icon_ig.png"
+                                class="img-hover"
+                                src="Assets/Logos/icon_ig_yellow.png"
                                 alt="Instagram"
                             />
                         </a>
-                        <a href="#">
+                        <a href="#" class="icon-small icon-link">
                             <img src="Assets/Logos/icon_tw.png" alt="Twitter" />
-                        </a>
-                        <a href="#bottom">
                             <img
-                            src="Assets/Logos/logo_bat_flèche_2.png"
-                            alt="fleche vers le bas"
+                                class="img-hover"
+                                src="Assets/Logos/icon_tw_yellow.png"
+                                alt="Twitter"
+                            />
+                        </a>
+                        <a href="#section-form" class="icon-large icon-link">
+                            <img
+                                src="Assets/Logos/logo_bat_flèche_2.png"
+                                alt="Fill up the form"
+                            />
+                            <img
+                                src="Assets/Logos/logo_bat_flèche_yellow_2.png"
+                                alt="Fill up the form"
+                                class="img-hover"
                             />
                         </a>
                     </div>
-                </section>
-            </div>
-        </div>
-        <main>
-            <img src="Assets/Logos/flèche_down_header.png" alt="fleche" />
-            <!-- La deuxieme section -->
-            <section>
-                <div>
-                    <h1>BATMAN AU CINÉMA</h1>
-                    <p>
-                        Le personnage de Batman est un super héros de l’univers
-                        de DC Comics. Il a été créé par le dessinateur Bob Kane
-                        et le scénariste Bill Finger et apparaît pour la
-                        première fois dans le comic book Detective Comics en
-                        1939. Batman se différencie de Superman, alors héros
-                        majeur de DC, car il n’a aucun pouvoir. Il sera porté au
-                        cinema pour la première fois en 1943 par Lewis Wilson et
-                        bénéficiera de nombreux reboot, donnant l’occasion à de
-                        multiples acteurs d’interpréter l’homme chauve-souris.
-                        Voici les trois derniers :
-                    </p>
                 </div>
-                <div class="images_batman">
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome2.png"
-                            alt="Batman"
-                        />
-                        <p>
-                            Robert Pattinson
-                            <br />
-                            (2022)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome3.png"
-                            alt="Batman"
-                        />
-                        <p>
-                            Christian Bale
-                            <br />
-                            (2006 - 2008 - 2012)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome4.png"
-                            alt="Batman"
-                        />
-                        <p>
-                            Ben Affleck
-                            <br />
-                            20016- 2017/2020 – 2023
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- La 3em section -->
-            <section>
-                <div>
-                    <div>
-                        <h1>NÉMÉSIS</h1>
-                        <img
-                            src="Assets/Illustrations/Bathome13.png"
-                            alt="Arme de Batman"
-                        />
-                    </div>
-                    <p>
-                        Batman souhaite éradiquer la criminalité de Gotham.
-                        C’est pourquoi, il affrontera la plupart du temps, des
-                        vilains sans capacités surnaturelles mais
-                        particulièrement violents ou psychopathes. Avec son
-                        introduction dans la Justice League il aura l’occasion
-                        de se mesurer à des antagonistes qui défient
-                        l’imagination et les lois de la physique. Parmi les
-                        derniers ennemis emblématiques que nous avons pu voir au
-                        cinéma, on retrouve :
-                    </p>
-                </div>
-                <div class="images_vilain">
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome5.png"
-                            alt="un vilain"
-                        />
-                        <p>
-                            The Riddler - Paul Dano
-                            <br />
-                            (2022)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome6.png"
-                            alt="un vilain"
-                        />
-                        <p>
-                            Le Joker - Heath Ledger
-                            <br />
-                            (2008)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome7.png"
-                            alt="un vilain"
-                        />
-                        <p>
-                            Darkseid - Ray Porter
-                            <br />
-                            (2022)
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Entre les sections 3 et 4 il y une image a mettre -->
-            <img src="Assets/Illustrations/Bathome12.png" alt="images_batman" />
-
-            <!-- La 4em section -->
-            <section>
-                <div>
-                    <h1>ALLIÉS</h1>
-                    <p>
-                        Alfred est le majordome des Wayne. A leur mort il
-                        s’occupe de l’éducation du jeune Bruce avant de
-                        l’assister dans son rôle du Batman. Ce dernier
-                        rencontrera Catwoman dès le premier numéro des aventures
-                        de l’homme chauve-souris en 1940. Tantôt ennemie tantôt
-                        alliée la jeune femme fatale fera tourner la tête de
-                        Batman à maintes reprises. Du côté de la police, Bruce
-                        pourra compter sur l’aide infaillible de James Gordon,
-                        “Jim”, qui désire lui aussi nettoyer sa ville de la
-                        criminalité qui y règne.
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome9.png"
-                            alt="alliée"
-                        />
-                        <p>
-                            Alfred Pennyworth - Michael Cain
-                            <br />
-                            (2006 - 2008 - 2012)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome8.png"
-                            alt="alliée"
-                        />
-                        <p>
-                            Catwoman - Zoé Kravitz
-                            <br />
-                            (2008)
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="Assets/Illustrations/Bathome10.png"
-                            alt="alliée"
-                        />
-                        <p>
-                            James Gordon
-                            <br />
-                            (2014-2019)
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- La 5em section -->
-            <section>
-                <div>
-                    <h1>JUSTICE LEAGUE</h1>
-                    <p>
-                        Lorsque la Terre est menacée les plus grands super-héros
-                        s’allient pour la protéger. Ils doivent cependant
-                        apprendre à se faire confiance mutuellement et à faire
-                        équipe ce qui ne sera pas chose aisée. Ensemble ils
-                        forment la Justice League, les plus grands super-héros
-                        de la Terre, ceux vers qui le monde entier se tourne
-                        lorsque les menaces extraterrestres ou surnaturelles
-                        menacent son existence.
-                    </p>
-                </div>
-                <img
-                    src="Assets/Illustrations/Bathome11.png"
-                    alt="La justice League"
-                />
-            </section>
-
-            <!-- La Partie du Multimedia -->
-            <section class="multimedia">
-                <h1>MULTIMÉDIA</h1>
-                <div>
-                    <img src="Assets/Logos/icon_flèche_1.png" alt="fleche" />
-                    <article>
-                        <img
-                            src="Assets/Illustrations/Bathome_ba1.png"
-                            alt="Batman"
-                        />
-                        <div>
-                            <p>ACTION, Adventure</p>
-                            <p>Batman Begins</p>
-                            <p>IMDB : <span>8.2</span></p>
-                            <p>
-                                Le jeune Bruce Wayne assiste impuissant au
-                                meurtre de ses parents. Profondément traumatisé,
-                                il grandit obnubilé par un désir de vengeance.
-                                La Ligue des ombres, une secte de guerriers
-                                ninja dirigée par Ra's al Ghul, se chargera de
-                                son entraînement. De retour chez lui à Gotham,
-                                avec l'aide de son majordome Alfred Pennyworth,
-                                Bruce Wayne se lance alors dans la lutte contre
-                                le crime sous le nom de Batman.
-                            </p>
-                        </div>
-                    </article>
-                    <img src="Assets/Logos/icon_flèche_2.png" alt="fleche" />
-                </div>
-                <img
-                    src="Assets/Illustrations/Bathome_ba2.png"
-                    alt="Annonce Batman"
-                />
-            </section>
-
-            <!-- Le FORMULAIRE -->
-            <section class="formulaire">
-                <h1>PRENONS CONTACT</h1>
-                <form action="">
-                    <div>
-                        <h2>Adresse email</h2>
-                        <input
-                            type="email"
-                            placeholder=" Adresse email"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <h2>NEWSLETTER</h2>
-                        <label for="newsletter">
-                            En cochant cette case vous acceptez de recevoir
-                            l’actualité concernant les aventures de Batman :
-                        </label>
-                        <input type="checkbox" name="newsletter" />
-                        <select>
-                            <option value="choix1">
-                                Choisissez la fréquence à laquelle vous
-                                souhaitez recevoir votre newsletter
-                            </option>
-                            <option value="choix2">Une fois par semain</option>
-                            <option value="choix3">
-                                Une fois toutes les 2 semaines (2 fois par mois)
-                            </option>
-                            <option value="choix4">Une fois par mois</option>
-                            <option value="choix5">
-                                Une fois tous les trois mois
-                            </option>
-                            <option value="choix6">
-                                Une fois tous les six mois
-                            </option>
-                        </select>
-                        <p>Souhaitez-vous recevoir des news</p>
-                        <button>Des films</button>
-                        <button>Des comics</button>
-                        <button>De tout</button>
-                    </div>
-                    <div>
-                        <h2>Message</h2>
-                        <input
-                            type="text"
-                            placeholder=" Laissez un commentaire pour la communauté"
-                        />
-                    </div>
-                </form>
-                <button type="submit">Confirmer</button>
-            </section>
-
-            <!-- La dernier section -->
-            <section>
-                <img src="Assets/Logos/icon_guillemets_1.png" alt="icon">
-                <p> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
-                <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
-                <img src="Assets/Logos/icon_guillemets_2.png" alt="">
-            </section>
+            </aside>
         </main>
-        <footer id="bottom">
-            <div>
-                <img src="Assets/Logos/icon_WB.png" alt="WB">
-                <p> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-            </div>
-            <div>
-                <a href="#"><img src="Assets/Logos/logo_sayna_white.png" alt="Sayna"></a>
-                <img src="Assets/Logos/icon_x.png" alt="X">
-                <a href="#"><img src="Assets/Logos/icon_DC.png" alt="DC"></a>
-                <a href="#"><img src="Assets/Logos/icon_facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="Assets/Logos/icon_ig.png" alt="Instagram"></a>
-                <a href="#"><img src="Assets/Logos/icon_tw.png" alt="Twitter"></a>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="flex">
+                    <img
+                        class="icon-small"
+                        src="Assets/Logos/icon_WB.png"
+                        alt="Warner Bros"
+                    />
+                    <small>
+                        Ce projet respecte l'univers cinématographique des films
+                        Batman récents. Version Nolan & Snyder & Reeves
+                    </small>
+                </div>
+                <div class="networks flex">
+                    <div class="flex">
+                        <a href="#" class="icon-medium icon-link">
+                            <img
+                                src="Assets/Logos/logo_sayna_white.png"
+                                alt="logo Sayna"
+                            />
+                            <img
+                                class="img-hover"
+                                src="Assets/Logos/logo_sayna_yellow.png"
+                                alt="logo Sayna"
+                            />
+                        </a>
+                        <img
+                            class="icon-small"
+                            src="Assets/Logos/icon_x.png"
+                            alt=""
+                        />
+                        <a href="#" class="icon-medium icon-link">
+                            <img src="Assets/Logos/icon_DC.png" alt="" />
+                            <img
+                                class="img-hover"
+                                src="Assets/Logos/icon_DC_yellow.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+
+                    <a href="#" class="icon-small icon-link">
+                        <img
+                            src="Assets/Logos/icon_facebook.png"
+                            alt="Facebook"
+                        />
+                        <img
+                            class="img-hover"
+                            src="Assets/Logos/icon_facebook_yellow.png"
+                            alt="Facebook"
+                        />
+                    </a>
+                    <a href="#" class="icon-small icon-link">
+                        <img src="Assets/Logos/icon_ig.png" alt="Instagram" />
+                        <img
+                            class="img-hover"
+                            src="Assets/Logos/icon_ig_yellow.png"
+                            alt="Instagram"
+                        />
+                    </a>
+                    <a href="#" class="icon-small icon-link">
+                        <img src="Assets/Logos/icon_tw.png" alt="Twitter" />
+                        <img
+                            class="img-hover"
+                            src="Assets/Logos/icon_tw_yellow.png"
+                            alt="Twitter"
+                        />
+                    </a>
+                </div>
             </div>
         </footer>
     </body>
