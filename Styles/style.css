@@ -29,7 +29,7 @@
     --yellow-lemon: #f8f184;
     --blue: #19587d;
     --red-light: #b11313;
-    --gray: var(--gray);
+    --gray: #c4c4c4;
     --color-border: #bcbbbd3b;
 
     scroll-behavior: smooth;
@@ -592,6 +592,75 @@ aside .icon-aside img {
     display: none;
 }
 
+.section-form .select,
+.section-form .select::placeholder {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border-bottom: 1px solid var(--gray);
+    cursor: pointer;
+}
+
+.select option {
+    background-color: #0f120f;
+    cursor: pointer;
+}
+
+#select {
+    position: relative;
+}
+#select.select-shown .select-options {
+    display: block;
+}
+#select.select-shown .select-option-visible-icon {
+    transform: rotate(180deg);
+}
+#select .select-options {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: none;
+    background: #000;
+}
+#select .select-option-visible {
+    display: grid;
+    grid-template: 1fr/1fr 2rem;
+    cursor: pointer;
+}
+#select .select-option-visible-text {
+    white-space: nowrap;
+    overflow: hidden;
+}
+#select .select-option-visible-icon {
+    height: 1rem;
+    justify-self: end;
+    align-self: center;
+}
+#select .select-option {
+    background: linear-gradient(
+        165deg,
+        rgba(237, 222, 191, 0.6),
+        rgba(25, 88, 125, 0.6)
+    );
+    padding: 0.5rem;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(188, 187, 189, 0.1);
+}
+#select .select-option:hover {
+    background: linear-gradient(
+        155deg,
+        rgba(237, 222, 191, 0.4),
+        rgba(25, 88, 125, 0.4)
+    );
+}
+
 .quotes {
     display: flex;
     flex-direction: row;
@@ -670,60 +739,6 @@ footer .networks {
     width: 100%;
 }
 
-#select {
-    position: relative;
-}
-#select.select-shown .select-options {
-    display: block;
-}
-#select.select-shown .select-option-visible-icon {
-    transform: rotate(180deg);
-}
-#select .select-options {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    display: none;
-    background: #000;
-}
-#select .select-option-visible {
-    display: grid;
-    grid-template: 1fr/1fr 2rem;
-    cursor: pointer;
-}
-#select .select-option-visible-text {
-    white-space: nowrap;
-    overflow: hidden;
-}
-#select .select-option-visible-icon {
-    height: 1rem;
-    justify-self: end;
-    align-self: center;
-}
-#select .select-option {
-    background: linear-gradient(
-        165deg,
-        rgba(237, 222, 191, 0.6),
-        rgba(25, 88, 125, 0.6)
-    );
-    padding: 0.5rem;
-    min-width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    border-bottom: 2px solid rgba(188, 187, 189, 0.1);
-}
-#select .select-option:hover {
-    background: linear-gradient(
-        155deg,
-        rgba(237, 222, 191, 0.4),
-        rgba(25, 88, 125, 0.4)
-    );
-}
 
 /* Changer la couleur du fond de l'image en jaune lorsque la souris est dessus */
 .icon-link {
