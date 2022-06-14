@@ -125,7 +125,7 @@ header .link {
 header .link-active::after {
     content: "";
     text-decoration: underline;
-    border-bottom: 2px solid var(--color-border);
+    border-bottom: 1px solid var(--white);
     position: absolute;
     left: 0;
     top: 102%;
@@ -133,6 +133,9 @@ header .link-active::after {
     height: auto;
 }
 header .link:hover::after {
+    border-bottom: 3px solid var(--white);
+}
+.links a:visited {
     border-bottom: 3px solid var(--white);
 }
 header .banner-wrapper {
@@ -273,7 +276,7 @@ footer {
 @media screen and (min-width: 768px) {
     .section-left .section-title,
     .section-left .section-text {
-        padding-right: 4rem;
+        padding-right: 3rem;
     }
     .section-right .section-title,
     .section-right .section-text {
@@ -694,32 +697,44 @@ footer .networks {
     opacity: 1;
 }
 
-.fade-in-hidden {
-    opacity: 0;
+/* il faut que l'animation commence lorsque l'on scroll,
+mais pour cela, je dois utiliser JavaScript. Donc les animations
+de fadein sont pas tres jolie 😂 */
+.fade-in {
+    animation: fadeInAnimation 3s;
+    -moz-animation: fadeInAnimation 3s;
+    -webkit-animation: fadeInAnimation 3s;
+    -o-animation: fadeInAnimation 3s;
 }
-.fade-in-shown {
-    -webkit-animation: fade-in 0.4s ease-in-out forwards;
-    animation: fade-in 0.4s ease-in-out forwards;
-}
-
-@-webkit-keyframes fade-in {
+@keyframes fadeInAnimation {
     0% {
-        transform: translateX(-3rem);
         opacity: 0;
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
     }
 }
-
-@keyframes fade-in {
+@-moz-keyframes fadeInAnimation {
     0% {
-        transform: translateX(-3rem);
         opacity: 0;
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+    }
+}
+@-webkit-keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
