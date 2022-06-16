@@ -695,18 +695,11 @@ footer .networks {
 }
 
 /* Changer la couleur du fond de l'image en jaune lorsque la souris est dessus */
-.icon-link {
-    position: relative;
+.img-hover:hover {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(64%) saturate(7500%)
+        hue-rotate(348deg) brightness(97%) contrast(108%);
 }
-.icon-link .img-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-.icon-link:hover .img-hover {
-    opacity: 1;
-}
+
 
 /* il faut que l'animation commence lorsque l'on scroll,
 mais pour cela, je dois utiliser JavaScript. Donc les animations
